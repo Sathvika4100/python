@@ -1,0 +1,8 @@
+num3 = int(input("Enter the number :"))
+if not (num3 % 2 == 0): #the modulus gives the remainder.
+                        #the circular brackets after the """ifnot"""
+                        #aint necessary as it will not show error without the circular
+                        #brackets.
+    print("odd")        #ifnot and if is a python condition statement.
+else:
+    print("even")
