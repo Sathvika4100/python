@@ -1,0 +1,6 @@
+num1 = int(input("Enter the number :"))
+
+if num1 % 2 == 0:         #if & else are python condition statements.
+    print("Even")
+else:
+    print("Odd")
