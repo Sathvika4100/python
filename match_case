@@ -1,0 +1,32 @@
+name = input("Enter Student's Name : ")
+geo = int(input("Enter marks obtained in Geography : "))
+math = int(input("Enter marks obtained in Maths : "))
+eng = int(input("Enter marks obtained in English : "))
+python = int(input("Enter marks obtained in Python : "))
+total = (geo+math+eng+python)
+print("Total Marks : ",total)
+percentage = (total/400*100)
+match True :
+    case _ if percentage < 100 and percentage >= 90:
+        Grade = "+A"
+    case _ if percentage < 90 and percentage >= 80:
+        Grade = "A"
+    case _ if percentage < 80 and percentage >= 70:
+        Grade = "+B"
+    case _ if percentage < 70 and percentage >= 60:
+        Grade = "B"
+    case _ if percentage < 60 and percentage >= 50:
+        Grade = "C"
+    case _ if percentage < 50 and percantage >= 40:
+        Grade = "D"
+    case _ if percentage < 40 and percentage >= 35:
+        Grade = "E"
+    case _ if percentage < 35 and percentage >= 0:
+        Grade = "Fail"
+#Display Results
+print("\n---Result---")
+print("Name : ",name)
+print("Total Marks : ", total,"/400")
+print(f"Percentage : {percentage : .2f}%") #2f is for only two places needed after decimal in float.
+print("Grade : ",Grade)
+ 
