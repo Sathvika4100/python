@@ -1,0 +1,15 @@
+num1 = int(input("Enter value 1 : "))
+num2 = int(input("Enter value 2 : "))
+select = (str(input("Select your choice of arithmetic operator : ")))
+if select == "+":
+    print(f"{num1}+{num2} = {num1+num2}")
+elif select == "-":
+    print(f"{num1}-{num2} = {num1-num2}")
+elif select == "*":
+    print(f"{num1}*{num2} = {num1*num2}")
+elif select == "/":
+    print(f"{num1}/{num2} = {num1/num2}")
+elif select == "%":
+    print(f"{num1}%{num2} = {num1%num2}")
+else:
+    print("Out Of Range")
