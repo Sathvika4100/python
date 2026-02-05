@@ -1,0 +1,16 @@
+marks1 = int(input("Enter Student's marks : "))
+marks2 = int(input("Enter Student's marks : "))
+choice = int(input("Enter your choice of operator\nEnter 1 for -\nEnter 2 for +\nEnter 3 for /\nEnter 4 for %\nEnter 5 for * : "))
+match(choice):
+    case 1:
+        print(f"{marks1}-{marks2}={marks1-marks2}")
+    case 2:
+        print(f"{marks1}+{marks2}={marks1+marks2}")
+    case 3:
+        print(f"{marks1}/{marks2}={marks1/marks2}")
+    case 4:
+        print(f"{marks1}%{marks2}={marks1%marks2}")
+    case 5:
+        print(f"{marks1}*{marks2}={marks1*marks2}")
+    case _:
+        print("Enter Again")
