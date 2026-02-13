@@ -1,0 +1,4 @@
+int1 = int(input("Enter the end range : "))
+value = int(input("Enter the value : "))
+for i in range(0,int1-2):   #here 'int1' is 'n' i.e. (n-1).
+    print(i*value)
