@@ -1,0 +1,4 @@
+num1 = int(input("Enter the end range : "))
+value = int(input("Enter the value that is to be multiplied by i : "))
+for i in range(0,num1+1,2): #skips two steps due to the '2' written on the right most side.
+    print(f"{value} * {i} = {i*value}") #multiplies the value with 'i'.
