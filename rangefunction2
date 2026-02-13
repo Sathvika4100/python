@@ -1,0 +1,4 @@
+for i in range(0,10+1,2): #first one is for telling which number the sequence starts from. Second one is for the number where the sequence ends(n-1),here(n+1).
+    print(i)            #Third is the step that it skips.
+               #arithmetic operation used, which is multiplied by each number.
+               #i prints the sequence.
