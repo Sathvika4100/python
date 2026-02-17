@@ -1,0 +1,13 @@
+num = int(input("Enter the value : "))
+reverse = 0
+org = num
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+print("Reversed number",reverse)
+
+if org == reverse:             #palindrome numbers are those numbers which are same even after reversing them, example 121,reversed is 121.
+    print("palindrome number")
+else:
+        ("Not a palindrome number")
