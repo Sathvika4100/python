@@ -1,0 +1,6 @@
+num = int(input("Enter the value that will be * by i : "))
+i = int(input("Enter the value of i : ")) #the value of i. 
+while i <= 10:                            # the value will be repeated until the 'i' value does not iterate till 10.
+    print(i*num)
+    i += 1                                #the 'i*num' will be repeating infinitely without this statement as this statement turns the value of i from 1 to 2 till 10 and then the program stops.
+    
