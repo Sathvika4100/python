@@ -1,0 +1,8 @@
+num1 = int(input("Enter the end range : "))  #to see total sum you need to give a vaariable i.e.'num1'.
+i = 1
+total = 0
+while i <= num1:
+    i += 1     #this iterates the i value to next number.
+    total = i + total
+    print(i)
+    print(f"The total sum of {num1} is {total}")
