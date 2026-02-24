@@ -1,0 +1,6 @@
+num1 = int(input("Enter the end range : "))
+total = 0
+for i in range(0,num1+1,2):
+    print(i)
+    total = total * i
+    print(f"The total sum of {num1} is {total}")
