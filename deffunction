@@ -1,0 +1,11 @@
+def add():  #with the help of def function, we can make custom functions and use it for more than one time as here we used four times by calling the function.
+    int1 = int(input("Enter first number :"))
+    int2 = int(input("Enter second number :"))
+
+    print(f"{int1}+{int2}={int1+int2}")
+
+    
+add()
+add()
+add()
+add()
