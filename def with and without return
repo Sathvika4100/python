@@ -1,0 +1,19 @@
+def add(n1,n2):   #def with and without return.
+    print(f"{n1}+{n2}={n1+n2}")
+
+
+
+def add1(n1,n2):
+    return f"{n1}+{n2}={n1+n2}"
+
+
+
+int1 = int(input("Enter first number :"))
+int2 = int(input("Enter second number :"))
+
+add(int1,int2) #def without return you use only this statement.
+#first you can use below statement when you use return.
+value = add1(int1,int2)
+print(value)
+#or you can use the second statement(below) when you use return.
+print(add1(int1,int2))
