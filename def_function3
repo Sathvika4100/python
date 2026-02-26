@@ -1,0 +1,36 @@
+def add():
+    int1 = int(input("Enter first number :"))
+    int2 = int(input("Enter second number :"))
+    print(f"{int1}+{int2}={int1+int2}")
+
+def subtract():
+    int1 = int(input("Enter first number :"))
+    int2 = int(input("Enter second number :"))
+    print(f"{int1}+{int2}={int1+int2}")
+
+def multiply():
+    int1 = int(input("Enter first number :"))
+    int2 = int(input("Enter second number :"))
+    print(f"{int1}*{int2}={int1*int2}")
+    
+def mod():
+    int1 = int(input("Enter first number :"))
+    int2 = int(input("Enter second number :"))
+    print(f"{int1}%{int2}={int1%int2}")
+    
+def div():
+    int1 = int(input("Enter first number :"))
+    int2 = int(input("Enter second number :"))
+    print(f"{int1} / {int2}={int1/int2}")
+choice = int(input("""Enter 1 for addition\nEnter 2 for subtraction\n
+Enter 3 for multiplication\nEnter 4 for modulo\nEnter 5 for division\nEnter your choice :"""))
+if choice == 1:
+    add()
+elif choice == 2:
+    subtract()
+elif choice == 3:
+    multiply()
+elif choice == 4:
+    mod()
+elif choice == 5:
+    div()
