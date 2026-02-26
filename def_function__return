@@ -2,7 +2,6 @@ def add(n1,n2):   #def with and without return.
     print(f"{n1}+{n2}={n1+n2}")
 
 
-
 def add1(n1,n2):
     return f"{n1}+{n2}={n1+n2}"
 
