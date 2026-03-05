@@ -1,0 +1,69 @@
+def armstrong(num1):  # here we use def function to create four functions and at the end we use 'while true' to loop the choice and 'break function' to exit
+    sum_of_powers = 0
+    num = num1
+    num_length = len(str(num))
+
+    while num > 0:
+        digit = num % 10
+        sum_of_powers += digit ** num_length
+        num = num // 10
+
+    if sum_of_powers == num1:
+        print(num1, "is an Armstrong number.")
+    else:
+        print(num1, "is not an Armstrong number.")
+
+
+def reverse(num1):
+    rev = 0
+    num = num1
+
+    while num > 0:
+        digit = num % 10
+        rev = rev * 10 + digit
+        num = num // 10
+
+    print("Reversed Number:", rev)
+
+
+def palindrome(num1):
+    reverse = 0
+    org = num1
+
+    while num1 > 0:
+        digit = num1 % 10
+        reverse = reverse * 10 + digit
+        num1 = num1 // 10
+
+    if org == reverse:
+        print(org, "is a Palindrome Number.")
+    else:
+        print(org, "is not a Palindrome Number.")
+
+
+def factorial(num1):
+    fact = 1
+    for i in range(1, num1 + 1):
+        fact = fact * i
+    print("Factorial of", num1, "is", fact)
+
+while True:
+
+    choice = int(input("Enter your choice of operation\n1 for armstrong\n2 for reverse\n3 for palindrome\n4 for factorial\nEnter 5 for exit\nEnter your choice : "))
+
+    if choice == 1:
+        num1 = int(input("Enter a value : "))
+        armstrong(num1)
+    elif choice == 2:
+        num1 = int(input("Enter a value : "))
+        reverse(num1)
+    elif choice == 3:
+        num1 = int(input("Enter a value : "))
+        palindrome(num1)
+    elif choice == 4:
+        num1 = int(input("Enter a value : "))
+        factorial(num1)
+    elif choice == 5:
+        break
+    else:
+        print("Invalid choice")
