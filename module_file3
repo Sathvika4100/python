@@ -1,0 +1,16 @@
+import modules2 as Md
+num1 = int(input("Enter the value for num1:"))
+num2 = int(input("Enter the value for num2:"))
+choice = int(input("Enter your choice of operation\n1 for add\n2 for sub\n3 for multiplication\n4 for div\n5 for modulus:"))
+if choice == 1:
+    print(Md.add(num1,num2))
+elif choice == 2:
+    Md.sub(num1,num2)
+elif choice == 3:
+    print(Md.multiply(num1,num2))
+elif choice == 4:
+    Md.div(num1,num2)
+elif choice == 5:
+    print(Md.mod(num1,num2))
+else:
+    print("Out of Range")
