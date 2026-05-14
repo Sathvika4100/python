@@ -1,0 +1,10 @@
+def add(n1,n2):
+    return f"{n1} + {n2} = {n1+n2}"#when return is used you have to use print statement in the other file where you import this file.
+def sub(n1,n2):
+    print(f"{n1} - {n2} = {n1-n2}")
+def multiply(n1,n2):
+    return f"{n1} * {n2} = {n1*n2}"#when return is used you have to use print statement in the other file where you import this file.
+def div(n1,n2):
+    print(f"{n1} / {n2} = {n1/n2}")
+def mod(n1,n2):
+    return f"{n1} % {n2} = {n1%n2}"
