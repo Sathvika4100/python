@@ -1,0 +1,15 @@
+import modules2 as MN
+
+num1=int(input("Enter value for num1:"))
+num2=int(input("Enter value for num2:"))
+
+
+print(MN.add(num1,num2))
+
+MN.sub(num1,num2)
+
+print(MN.multiply(num1,num2))
+
+MN.div(num1,num2)
+
+print(MN.mod(num1,num2))
