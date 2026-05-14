@@ -1,0 +1,7 @@
+import modules as md
+
+num1 = int(input("enter the value : "))
+num2 = int(input("enter the value : "))
+
+print(md.add(num1,num2))
+md.sub(num1,num2)
