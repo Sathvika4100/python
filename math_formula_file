@@ -1,0 +1,44 @@
+import math
+
+# 1. Square Root
+print("Square Root of 25:", math.sqrt(25))
+
+# 2. Power
+print("2 raised to power 3:", math.pow(2, 3))
+
+# 3. Ceiling and Floor
+print("Ceiling of 4.2:", math.ceil(4.2))
+print("Floor of 4.9:", math.floor(4.9))
+
+# 4. Absolute Value
+print("Absolute value of -10:", abs(-10))
+
+# 5. Factorial
+print("Factorial of 5:", math.factorial(5))
+
+# 6. Trigonometric Functions
+print("Sin 90 degrees:", math.sin(math.radians(90)))
+print("Cos 0 degrees:", math.cos(math.radians(0)))
+print("Tan 45 degrees:", math.tan(math.radians(45)))
+
+# 7. Logarithms
+print("Natural log of 10:", math.log(10))
+print("Base 10 log of 100:", math.log10(100))
+
+# 8. Exponential Function
+print("e power 2:", math.exp(2))
+
+# 9. Constants
+print("Value of PI:", math.pi)
+print("Value of e:", math.e)
+
+# 10. Greatest Common Divisor (GCD)
+print("GCD of 12 and 18:", math.gcd(12, 18))
+
+# 11. Degree and Radian Conversion
+print("180 degrees in radians:", math.radians(180))
+print("PI radians in degrees:", math.degrees(math.pi))
+
+# 12. Hypotenuse
+print("Hypotenuse of 3 and 4:", math.hypot(3, 4))
+
