@@ -16,7 +16,7 @@ def floor(num1):
     print("The floor value of num1 is:",math.floor(num1))
 
 def absolute(num1):
-    print("The absolute value fof num1 is:",abs(-num1))
+    print("The absolute value of num1 is:",abs(-num1))
 
 def factorial(num1):
     print("The factorial of num1:",math.factorial(num1))
