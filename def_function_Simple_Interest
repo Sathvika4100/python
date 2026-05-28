@@ -1,0 +1,15 @@
+def SI():
+    num1=(P*R*T/100)
+    print("Simple Interest is",num1)
+    
+while True:
+    choice = int(input("Enter your choice of number\n1 for SI\n2 for ending the loop:"))
+    if choice == 1:
+        P = int(input("Enter your Principle amount:"))
+        R = int(input("Enter your Rate of Interest:"))
+        T = int(input("Enter the Time:"))
+        SI()
+    elif choice == 2:
+        break
+    else:
+        print("Invalid Choice")
