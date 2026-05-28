@@ -1,0 +1,35 @@
+import def_formula_module_using_math_module as dfm
+num1 = int(input("Enter the value for num1:"))
+num2 = int(input("Enter the value for num2:"))
+
+dfm.square_root(num1)
+
+dfm.power(num1,num2)
+
+dfm.ceiling(num1)
+
+dfm.floor(num1)
+
+dfm.absolute(num1)
+
+dfm.factorial(num1)
+
+dfm.radians(num1)
+
+dfm.sin(num1)
+
+dfm.cos(num1)
+
+dfm.tan(num1)
+
+dfm.natural_log(num1)
+
+dfm.Base10_log(num1)
+
+dfm.expo(num1)
+
+dfm.PI()
+
+dfm.e()
+
+dfm.Greatest_Common_Divisor(num1,num2)
