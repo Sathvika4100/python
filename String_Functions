@@ -1,0 +1,72 @@
+# String Functions Demo Program
+
+text = "  Hello Python World  "
+text2 = "banana"
+numbers = "12345"
+mixed = "Python123"
+
+print("Original String:", repr(text))
+
+# Case conversion
+print("\n--- Case Conversion ---")
+print("upper():", text.upper())
+print("lower():", text.lower())
+print("title():", text.title())
+print("capitalize():", text.capitalize())
+print("swapcase():", text.swapcase())
+
+# Remove spaces
+print("\n--- Strip Functions ---")
+print("strip():", text.strip())
+print("lstrip():", text.lstrip())
+print("rstrip():", text.rstrip())
+
+# Find and Replace
+print("\n--- Find & Replace ---")
+print("find('Python'):", text.find("Python"))
+print("replace('Python','Java'):", text.replace("Python", "Java"))
+
+# Count and Search
+print("\n--- Count & Search ---")
+print("count('a') in banana:", text2.count("a"))
+print("startswith('  Hello'):", text.startswith("  Hello"))
+print("endswith('World  '):", text.endswith("World  "))
+
+# Split and Join
+print("\n--- Split & Join ---")
+fruits = "apple,banana,mango"
+fruit_list = fruits.split(",")
+print("split():", fruit_list)
+print("join():", "-".join(fruit_list))
+
+# Validation Methods
+print("\n--- Validation Methods ---")
+print("isalpha():", "Python".isalpha())
+print("isdigit():", numbers.isdigit())
+print("isalnum():", mixed.isalnum())
+print("islower():", "hello".islower())
+print("isupper():", "HELLO".isupper())
+print("isspace():", "   ".isspace())
+
+# Alignment
+print("\n--- Alignment ---")
+word = "Python"
+print("center():", word.center(15, "*"))
+print("ljust():", word.ljust(15, "-"))
+print("rjust():", word.rjust(15, "-"))
+
+# Length
+print("\n--- Length ---")
+print("len():", len(text))
+
+# String Operators
+print("\n--- String Operators ---")
+print("Concatenation:", "Hello" + " World")
+print("Repetition:", "Hi " * 3)
+print("'Py' in 'Python':", "Py" in "Python")
+
+# Formatting
+print("\n--- String Formatting ---")
+name = "Alice"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
