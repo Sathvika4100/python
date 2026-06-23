@@ -1,0 +1,283 @@
+#CREATE LISTS
+
+empty_list = []
+numbers = [1,2,3,4,5]
+mixed = [1,Python,3.14,True]
+nested = [[1,2][3,4]]
+
+print("Empty:",empty_list)
+print("Numbers:",numbers)
+print("Mixed:",mixed)
+print("Nested:",nested)
+
+
+#USING list()
+
+chars = list(Python)
+tuple_to_list = list((10,20,30))
+print(chars)
+print(tuple_to_list)
+
+
+#ACCESSING ELEMENTS
+
+print(numbers[0])   #first element.
+print(numbers[-1])  #last element.
+print(numbers[4])   #last element.
+
+
+#SLICING
+
+print(numbers[1:4])
+print(numbers[:3])
+print(numbers[::3])
+print(numbers[::-1]) #prints in descending order.
+
+
+
+
+#MODIFY LIST
+
+numbers[0] = 100
+print(numbers)
+
+
+
+
+#append()
+
+numbers.append(6) #adds 6 at the last of the numbers list.
+print(numbers)
+
+
+
+
+#extend()
+
+numbers.extend(7,8,9) #adds multiple elements at the end of the numbers list.
+print(numbers)
+
+
+
+
+#insert()
+
+numbers.insert(1,200)  #here 1 is the index number where 200 will be adde in the numbers list.
+print(numbers)
+
+
+
+
+#remove()
+
+numbers.remove(200)
+print(numbers)
+
+
+
+
+#pop()
+last = numbers.pop(9)  #here pop function removes the element 9 from numbers list.
+print("Popped:",last)
+print("List:",numbers)
+
+first = numbers.pop(0)   #here the index number 0 is given to remove the element which has 0 as its index number.
+print("Popped first:",first)
+print(numbers)
+
+
+
+#clear()
+
+temp = [1,2,3]
+print("List - temp",temp)
+temp.clear()  #clear function cleared the temp list. it made it an empty list.
+print(temp)
+
+
+
+
+#index()
+
+fruits = ["apple","banana","orange"]
+print(fruits.index("banana"))
+
+
+
+#count()
+
+nums = [1,1,2,3,1]
+print(nums.count(1))  #count function tells how many times 1 is repeating in the nums list.
+
+
+
+#sort()
+
+nums2 = [5,3,8,1,2]
+print(nums2)
+nums2.sort()  # sort function sorts in ascending order.
+print(nums2)
+
+nums2.sort(reverse=True)  #here sort function in descending order due to reverse=true statement.
+print(nums2)
+
+words = ["banana","kiwi","apple","watermelon"]
+words.sort(key=len) #here the key is the element inside the list and it will sort it in ascending order of its length of each word.
+print(words)
+
+
+
+
+#reverse()
+
+nums2.reverse()
+print(nums2)
+
+
+
+
+#copy()
+
+copy_list = nums2.copy()
+print(copy_list)
+
+
+
+
+#SHALLOW COPY
+
+a = [1,2,3]
+b = a[:2]   #here 2 is the index number.
+print(b)
+
+
+
+
+#CONCATENATION
+
+list1 = [1,2]
+list2 = [3,4]
+
+combined = list1 + list2
+print(combined)
+
+
+
+
+#REPETITION
+
+print([1,2]*3) #here the list elements 1,2 will be repeated three times in the list.
+
+
+
+
+
+#MEMBERSHIP TEST
+
+print("apple" in fruits)
+print("mango" not in fruits)
+
+
+
+#BUILT-IN FUNCTIONS
+
+values = [10,20,30,40]
+
+print("Length:",len(values))
+print("Max:",max(values))
+print("Min:",min(values))
+print("Sum:",sum(values))
+print("Sorted:",sorted(values))
+print("Reversed:",list(reversed(values)))
+#print("Any:",any([0,False,5]))
+#print("All:",all([1,True,5]))
+
+
+
+
+
+
+
+#ENUMERATE
+
+for i,j in enumerate(values):
+    print(1,j)#here enumerate gives index and its values.
+
+
+
+
+
+
+
+
+
+#ITERATION
+
+for item in fruits:
+    print(item)
+
+
+
+
+
+
+#LIST COMPREHENSION
+
+squares = [i*i for i in range(10)]
+print(squares)
+
+
+
+
+
+#LIST COMPREHENSION WITH CONDITION
+
+evens = [x for x in range(20) if x % 2 == 0]
+print(evens)
+
+
+
+
+#UNPACKING
+
+a,b,c = [10,20,30]
+print(a,b,c)
+
+
+
+
+
+
+#LIST TO STRING
+
+letters = ["P","y","t","h","o","n"]
+print("".join(letters)) #here we use join function to join the letters of python.
+
+
+
+
+
+#STRING TO LIST
+
+text = "Python"
+print(list(text))
+
+
+
+
+
+#LIST COMPARISION
+
+print([1,2,3] == [1,2,3])
+print([1,2,3] != [3,2,1])
+
+
+
+
+
+#CHECK EMPTY LIST
+
+lst = []
+
+if not lst:
+    print("List is empty")
