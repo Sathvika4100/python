@@ -62,7 +62,7 @@ print(numbers)
 
 #insert()
 
-numbers.insert(1,200)  #here 1 is the index number where 200 will be adde in the numbers list.
+numbers.insert(1,200)  #here 1 is the index number where 200 will be added in the numbers list.
 print(numbers)
 
 
