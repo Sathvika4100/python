@@ -1,0 +1,67 @@
+while True:
+    choice = int(input("Enter 1 for creating the list and inserting values\nEnter 2 for update value\nEnter 3 for delete value\nEnter 4 for searching the index value of the element\nEnter 5 for displaying all the elements\nEnter 6 to terminate the program:"))
+    if choice == 1:
+        #creating the list
+        List1 = int(input("Enter the size for your list:"))
+        List2 = []
+        for List1 in range(List1):
+            element=int(input("Enter your element:"))
+
+
+            List2.append(element)
+
+        #insert value .insert()
+        Index_insert = int(input("Enter the index value for where the number should be in the range of the list:"))
+        Insert_value = int(input("Enter your value that would be added to the list:"))
+
+        List2.insert(Index_insert,Insert_value)
+
+
+
+        
+    elif choice == 2:
+        # update value (modify)
+        index_value = int(input("Enter the index value of the element you would like to modify:"))
+
+        element_value = int(input("Enter the element of the index number mentioned before to modify: "))
+
+        List2[index_value] = (element_value)
+
+
+
+
+
+    elif choice == 3:
+        # delete value .remove()
+        Remove_value = int(input("Enter the value which you would like to delete from the list:"))
+
+        List2.remove(Remove_value)
+
+
+
+
+
+
+
+    elif choice == 4:
+        #Search .index()
+        index_value = int(input("Enter the element value from the list whose index value is to be known:"))
+
+
+        print(List2.index(index_value))
+
+
+
+
+
+    elif choice == 5:
+        #display all elements in the list
+        print(List2)
+
+
+
+
+
+
+    elif choice == 6:
+        break
