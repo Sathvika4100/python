@@ -1,0 +1,133 @@
+# 1. Creating Tuples
+empty_tuple = ()
+numbers = (10, 20, 30, 40, 50)
+mixed = ("Alice", 25, 99.5, True)
+without_parentheses = 1, 2, 3
+single_element = (5,)   # Comma is required
+
+print("Empty Tuple:", empty_tuple)
+print("Numbers:", numbers)
+print("Mixed:", mixed)
+print("Without Parentheses:", without_parentheses)
+print("Single Element:", single_element)
+
+print("\n--------------------------")
+
+# 2. Accessing Elements
+print("First Element:", numbers[0])
+print("Last Element:", numbers[-1])
+
+print("\n--------------------------")
+
+# 3. Slicing
+print("numbers[1:4] =", numbers[1:4])
+print("numbers[:3] =", numbers[:3])
+print("numbers[2:] =", numbers[2:])
+
+print("\n--------------------------")
+
+# 4. Concatenation
+tuple1 = (1, 2)
+tuple2 = (3, 4)
+print("Concatenation:", tuple1 + tuple2)
+
+print("\n--------------------------")
+
+# 5. Repetition
+print("Repetition:", tuple1 * 3)
+
+print("\n--------------------------")
+
+# 6. Tuple Methods
+values = (1, 2, 2, 3, 4, 2)
+
+print("Count of 2:", values.count(2))
+print("Index of 3:", values.index(3))
+
+print("\n--------------------------")
+
+# 7. Packing
+person = ("John", 21, "Computer Science")
+print("Packed Tuple:", person)
+
+print("\n--------------------------")
+
+# 8. Unpacking
+name, age, course = person
+print("Name:", name)
+print("Age:", age)
+print("Course:", course)
+
+print("\n--------------------------")
+
+# 9. Looping Through Tuple
+print("Looping:")
+for item in person:
+    print(item)
+
+print("\n--------------------------")
+
+# 10. Membership Test
+print("'John' in person:", "John" in person)
+print("'Alice' in person:", "Alice" in person)
+
+print("\n--------------------------")
+
+# 11. Length
+print("Length of numbers:", len(numbers))
+
+print("\n--------------------------")
+
+# 12. Nested Tuple
+nested = ((1, 2), (3, 4), (5, 6))
+print("Nested Tuple:", nested)
+print("Access Nested Element:", nested[1][0])
+
+print("\n--------------------------")
+
+# 13. Converting List to Tuple
+my_list = [100, 200, 300]
+my_tuple = tuple(my_list)
+print("List:", my_list)
+print("Converted Tuple:", my_tuple)
+
+print("\n--------------------------")
+
+# 14. Converting Tuple to List
+new_list = list(my_tuple)
+print("Tuple to List:", new_list)
+
+print("\n--------------------------")
+
+# 15. Returning Multiple Values from Function
+def get_coordinates():
+    return (10, 20)
+
+x, y = get_coordinates()
+print("Coordinates:", x, y)
+
+print("\n--------------------------")
+
+# 16. Immutability
+print("Tuples are immutable.")
+print("Trying to modify a tuple will raise an error.")
+
+# Uncomment the following lines to see the error
+# numbers[0] = 100
+# TypeError: 'tuple' object does not support item assignment
+
+print("\n--------------------------")
+
+# 17. Tuple as Dictionary Key
+locations = {
+    (10, 20): "Home",
+    (30, 40): "Office"
+}
+
+print("Dictionary with Tuple Keys:")
+print(locations)
+print("Location at (10,20):", locations[(10, 20)])
+
+print("\n--------------------------")
+
+print("Program Completed Successfully!")
