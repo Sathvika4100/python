@@ -1,0 +1,32 @@
+while True :
+    choice = int(input("Enter 1 for create\n2 for update\n3 for delete\n4 for search\n5 for display in tuple\n6 for stopping the loop :"))
+    if choice == 1:
+        #creating
+        num1 = int(input("Enter the number of elements for tuple:"))
+        list1 = ()
+        list2 = list(list1)
+        for num1 in range(num1):
+            element = int(input("Enter tuple element:"))
+            list2.append(element)
+        tuple(list2)
+    elif choice == 2:
+        #update(modify)
+        update_no = int(input("Enter number to update:"))
+        update_index = int(input("Enter the index number:"))
+        list2[update_index] = (update_no)
+        tuple(list2)
+        #delete
+    elif choice == 3:
+        value = int(input("Enter the value to delete it:"))
+        list2.remove(value)
+        tuple(list2)
+        #serach(index)
+    elif choice == 4:
+        search = int(input("Enter the number for its index:"))
+        print(list2.index(search))
+        tuple(list2)
+    elif choice == 5:
+        #display(print)
+        print(tuple(list2))
+    elif choice == 6:
+        break
