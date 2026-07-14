@@ -1,0 +1,128 @@
+# PYTHON DICTIONARY
+# ==========================
+
+# A dictionary is a collection of data stored as KEY : VALUE pairs.
+# Dictionaries are:
+# 1. Mutable (can be changed)
+# 2. Ordered (Python 3.7+)
+# 3. Keys must be unique
+# 4. Values can be duplicated
+
+# --------------------------
+# Creating a Dictionary
+# --------------------------
+
+student = {
+    "name": "Alice",
+    "age": 20,
+    "course": "Python"
+}
+
+print("Original Dictionary:")
+print(student)
+
+# --------------------------
+# Accessing Values
+# --------------------------
+
+print("\nAccessing Values")
+print(student["name"])          # Using key
+print(student.get("age"))       # Using get()
+
+# --------------------------
+# Adding New Item
+# --------------------------
+
+student["city"] = "Mumbai"
+
+print("\nAfter Adding City")
+print(student)
+
+# --------------------------
+# Updating Item
+# --------------------------
+
+student["age"] = 21
+
+print("\nAfter Updating Age")
+print(student)
+
+# --------------------------
+# Loop Through Dictionary
+# --------------------------
+
+print("\nLooping Dictionary")
+
+for key, value in student.items():
+    print(key, ":", value)
+
+# --------------------------
+# Dictionary Methods
+# --------------------------
+
+print("\nDictionary Methods")
+
+# get()
+print("\n1. get()")
+print(student.get("name"))
+
+# keys()
+print("\n2. keys()")
+print(student.keys())
+
+# values()
+print("\n3. values()")
+print(student.values())
+
+# items()
+print("\n4. items()")
+print(student.items())
+
+# update()
+print("\n5. update()")
+student.update({"marks": 95})
+print(student)
+
+# setdefault()
+print("\n6. setdefault()")
+student.setdefault("country", "India")
+print(student)
+
+# copy()
+print("\n7. copy()")
+new_student = student.copy()
+print(new_student)
+
+# pop()
+print("\n8. pop()")
+student.pop("marks")
+print(student)
+
+# popitem()
+print("\n9. popitem()")
+student.popitem()       # Removes last inserted item
+print(student)
+
+# fromkeys()
+print("\n10. fromkeys()")
+keys = ["A", "B", "C"]
+new_dict = dict.fromkeys(keys, 0)
+print(new_dict)
+
+# clear()
+print("\n11. clear()")
+temp = student.copy()
+temp.clear()
+print(temp)
+
+# del statement
+print("\n12. del")
+del student["course"]
+print(student)
+
+# --------------------------
+# Final Dictionary
+# --------------------------
+
+print("\nFinal Dictionary")
+print(student)
