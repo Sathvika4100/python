@@ -1,0 +1,25 @@
+import pyodbc
+
+my = pyodbc.connect('Driver={SQL Server};'
+                    'Server=DESKTOP-DR9KJMD;'
+                    'Database=aditya;'
+                    'Trusted_Connection=yes;'
+)   
+
+
+
+run = my.cursor()
+
+run.execute('select * from Customers;')
+
+for i in run:
+    print(i)
+
+
+
+
+
+run.commit()
+
+
+print("Complete")
